@@ -1,0 +1,120 @@
+*{box-sizing: border-box;}
+
+body{
+   background-color: #2e5090;
+}  
+
+/* About page */
+
+.head_text{
+
+font-size: 45px;
+text-align: center;
+}
+
+.team{
+   text-align: center;
+}
+
+@media screen and (min-width:900px) {
+   .team{
+      display: flex;
+   }
+}
+
+.team_description{
+   text-align: justify;
+   text-align: center;
+}
+
+.team_img{
+   margin-left: 4rem;
+}
+
+.team_img1{
+   margin-right:4rem;
+}
+
+.description{
+   text-align: justify;
+   width:98vw;
+   font-size: 20px;
+}
+
+@media screen and (min-width:900px) {
+
+   .description{
+      width: 80%;
+      margin-left:5rem;
+      font-size: 25px;
+   }
+}
+
+.description_1{
+   text-align: justify;
+   width:98vw;
+   font-size: 20px;
+}
+
+@media screen and (min-width:900px) {
+   .description_1{ 
+      width: 80%;
+      margin-left:4rem;
+      font-size: 25px;
+   }
+}
+
+/* Contact Page */
+
+.contact_details{
+   margin-top: 25rem;
+   text-align: center;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+@media screen and (min-width:900px) {
+   .contact_details{
+      margin-top: 20rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+}
+
+li{
+   list-style: none;
+   font-weight: bold;
+   font-size: 20px;
+   padding-bottom: 10px;
+   text-align: left;
+   padding-left: 0%;
+}
+
+.contact_para{
+   text-align: justify;
+   width: 50%;
+   font-size: 20px;
+   padding-left: 5px;
+   margin-top: -10px;
+}
+
+.contact_header{
+   text-align: left;
+   font-size: 35px;
+}
+
+.contact_info{
+   margin-left: 5rem;
+}
+
+/* Contact Form */
+.contact_form{
+   margin-right: 15rem;
+}
+
+.contact_form_inputs{
+   display: flex;
+   flex-direction: column;
+   max-width: 150%;
+}
