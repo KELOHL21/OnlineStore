@@ -4,34 +4,51 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./src/stylesheet/stylesheet.css">
-   <title>Home</title>
-</head>
-<body>
-   <nav>
-   <div class="logo">
-      <h1>
-      Logo
-      </h1>
-   </div>
-   <div class="links">
-      <ul>
-         <li><a href="">About Us</a></li>
-         <li><a href="">Shop</a></li>
-         <li><a href="">Cart</a></li>
-         <li><a href="">Contact Us</a></li>
-      </ul>
-   </div>
-   </nav>
 
-   <section class="about_us">
+   <!-- CSS only -->
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+   <link rel="stylesheet" href="./src/stylesheet/stylesheet.css">
+
+   <title>Home</title>
+   
+</head>
+
+   <header class="nav_container">
+
+      <img src="" alt="store_logo" class="store_logo">
+   
+      <input type="checkbox" id="nav_toggle" class="nav_toggle">
+      <nav>
+         <ul>
+         <li><a href="">Home</a></li> 
+         <li><a href="./about.html">About Us</a></li> 
+         <li><a href="#">Shop</a></li>  
+         <li><a href="#">Cart</a></li>
+         <li><a href="#">Contact Us</a></li> 
+         <input type="text" id="search_bar" class="search_bar" placeholder="Search"/></input>
+         </ul>
+      </nav>   
+      <label for="nav_toggle" class="nav_toggle_label">
+         <span><i class="fa-solid fa-bars fa-lg"></i></span>
+      </label>
+   
+   </header> 
+
+<body>
+   <container class="banner">
+      <p>Anime Will Save The Universe</p>
+      </container>
+      <section class="about_us">
+
    <div class="about_us_image">
 
    </div>
+
    <div>
       <p>Japanimation is a retail experience created for fans of anime and anime culture. We carry 100% officially licensed EXCLUSIVE clothing from the biggest names in anime like Dragon Ball Z, Cowboy Bebop, My Hero Academia, Crunchyroll, and many more.It started in 2010 and has grown bigger than ever anticipated.</p>
 
-      <button type="button"><a href="./about.html">Learn More</a></button>
+      <button type="button" class="about_button"><a href="./about.html">Learn More</a></button>
    </div>
    </section>
 
@@ -42,6 +59,9 @@
    </footer>
    <script>
 
-   </script>
+   </script> 
 </body>
 </html>
+
+
+   

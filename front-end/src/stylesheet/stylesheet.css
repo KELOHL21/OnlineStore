@@ -1,8 +1,130 @@
-*{box-sizing: border-box;}
+
 
 body{
    background-color: #2e5090;
 }  
+
+/* Navbar */
+.nav_container{
+   text-align: center;
+   width: 100%;
+   z-index: 999;
+}
+
+@media screen and (min-width:1000px){
+   .nav_container{
+       display: flex;
+       justify-content: space-between;
+   }
+}
+
+
+nav{
+   position: absolute;
+   text-align: left;
+   top: 100%;
+   background-color: #009387;
+   width: 100%;
+   display: none;
+}
+
+@media screen and (min-width:1000px){
+   nav{
+       display: contents;
+   }
+}
+
+nav ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+@media screen and (min-width:1000px) {
+   nav ul{
+       display: flex;
+       justify-content: space-evenly;
+      }
+}
+
+nav li{
+   margin-top: 1em;
+   margin-bottom: 1em;
+   margin-left: 1em;
+}
+
+@media screen and (min-width:1000px) {
+   nav li{
+       margin-top: 20px;
+       margin-left: 18px;
+       width: 100%;
+   }
+}
+
+nav a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 1rem;
+   text-transform: uppercase;
+   width: 50%;
+}
+
+nav a:hover {
+   color: rgb(57, 9, 201);
+}
+
+.nav_toggle:checked~nav {
+   display: block;
+}
+
+@media screen and (min-width:1000px) {
+   .nav_toggle{
+   display: none;
+}
+}
+
+.nav_toggle_label{
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin-left: 1em;
+   height: 100%;
+   display: flex;
+   align-items: left;
+}
+
+@media screen and (min-width:1000px) {
+   .nav_toggle_label{
+       display: none;
+   }
+}
+
+.search_bar{
+   position: relative;
+   margin: auto;
+   margin-left: 10px;
+   height: 25%;
+   background: rgba(255, 252, 252, 0.884);
+   opacity: 80%;
+   margin-right: 10px;
+   border-top-left-radius: 25px;
+   border-top-right-radius:25px ;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+
+.search_bar::placeholder{
+   text-align: center;
+   font-size: 18px;
+   margin-right: 25px;
+}
+
+#search_mag{
+   position: absolute;
+} 
+
+/* Home Page */
+
 
 /* About page */
 
@@ -118,3 +240,4 @@ li{
    flex-direction: column;
    max-width: 150%;
 }
+
