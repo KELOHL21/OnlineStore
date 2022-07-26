@@ -8,4 +8,9 @@ require './vendor/autoload.php';// This is compulsory for our framework to work,
 
 $app = new \Slim\App;// We create an object of the Slim framework main app
 
-var_dump($app);
+$app->get('./', function($request,$response,$args){
+   $response->write('Hello World');
+})
+
+$app->run();
+
